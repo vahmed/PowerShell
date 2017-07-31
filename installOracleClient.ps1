@@ -44,7 +44,6 @@ Function installOracle86()
 	Write-Host -ForegroundColor Yellow "Extracting Oracle Client 32Bit"
 	sleep 2
 	Start-Process "E:\temp\Build\unzip.exe" -ArgumentList '-d','E:\temp\Build\Oracle_x86','E:\temp\Build\p10404530_112030_WINNT_3of6.zip' -Wait
-	streamsFix
 	$OraInstx86="E:\temp\Build\Oracle_x86\client\setup.exe" 
 	$OraArgsx86="-silent -ignorePrereq -waitforcompletion -responseFile E:\temp\Build\client_install_x86.rsp" ###Other Options: -noconsole
 	Write-Host -ForegroundColor Yellow "Installing Oracle Client 32Bit"
@@ -75,7 +74,6 @@ Function installOracle64()
 	Write-Host -ForegroundColor Yellow "Extracting Oracle Client 64Bit"
 	sleep 2
 	Start-Process "E:\temp\Build\unzip.exe" -ArgumentList '-d','E:\temp\Build\Oracle_x64','E:\temp\Build\p10404530_112030_MSWIN-x86-64_4of7.zip' -Wait
-	streamsFix
 	$OraInstx64="E:\temp\Build\Oracle_x64\p10404530_112030_MSWIN-x86-64_4of7\client\setup.exe" 
 	$OraArgsx64="-silent -ignorePrereq -waitforcompletion -responseFile E:\temp\Build\client_install_x64.rsp" ###Other Options: -noconsole
 	Write-Host -ForegroundColor Yellow "Installing Oracle Client 64Bit"
