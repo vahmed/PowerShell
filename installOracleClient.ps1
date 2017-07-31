@@ -97,7 +97,7 @@ installOracle64
 installOracle86
 
 Stop-Transcript
-& "e:\temp\zip.exe" a -tzip -wE:\temp\Build Oracle_Install.zip *.log output.txt
+& "e:\temp\zip.exe" E:\temp\Build Oracle_Install.zip *.log output.txt
 Send-MailMessage -From $From -To $To -Subject $Subject -Attachments $Attachment -Body $Body -SmtpServer $SMTPServer
 sleep 10
 #shutdown -r -t 00 -f
