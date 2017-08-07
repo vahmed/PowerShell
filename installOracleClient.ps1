@@ -1,7 +1,7 @@
 <################################################################################
 installOracleClient
- Created/Modified: 05-Aug-2015
- Description: Installs Oracle 11.2.0.4 Client
+Created/Modified: 05-Aug-2015
+Description: Installs Oracle 11.2.0.4 Client
 #################################################################################>
 # --> This command --> "Set-ExecutionPolicy -Scope LocalMachine -ExecutionPolicy RemoteSigned -Force" must be issued before launching this script
 
