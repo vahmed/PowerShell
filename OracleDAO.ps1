@@ -1,5 +1,5 @@
 <# 
-Oracle Managed DAO
+Oracle Managed DAO Example
 #>
 
 Add-Type -Path "C:\app\oracle\product\12.1.0\client_1\ODP.NET\managed\common\Oracle.ManagedDataAccess.dll"
